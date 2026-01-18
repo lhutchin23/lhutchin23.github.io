@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Princeton Learning Experience HK</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+    </style>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav class="top-nav">
+      <div class="nav-left">
+        <button class="menu-btn" id="openMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="social-icons">
+          <a href="mailto:example@ple.com"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
+          <a href="#"><i class="fa-solid fa-globe"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="nav-center">
+        <div class="nav-logo-wrap">
+          <img
+            src="./logo.png"
+            alt="PLE Logo"
+            class="nav-logo-img"
+            onerror="this.style.display='none'"
+          />
+          <div class="nav-logo-text">PLE HK</div>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <div class="lang-switch">
+          <span class="lang-btn active">EN</span>
+          <span style="color: #ddd">|</span>
+          <span class="lang-btn">繁</span>
+          <span style="color: #ddd">|</span>
+          <span class="lang-btn">中</span>
+        </div>
+
+        <a href="#join" class="cta-btn">Join Us</a>
+      </div>
+    </nav>
+
+    <div class="sidebar-overlay" id="overlay"></div>
+
+    <aside class="sidebar" id="sidebar">
+      <button class="close-btn" id="closeMenu">✕</button>
+      <div class="sidebar-header">
+        <div class="sidebar-logo-text">PLE HK</div>
+      </div>
+
+      <nav>
+        <a href="#home" class="sidebar-link" style="transition-delay: 0.1s"
+          >Home</a
+        >
+        <a href="#about" class="sidebar-link" style="transition-delay: 0.2s"
+          >About Us</a
+        >
+        <a href="#benefits" class="sidebar-link" style="transition-delay: 0.4s"
+          >Benefits</a
+        >
+        <a href="#team" class="sidebar-link" style="transition-delay: 0.5s"
+          >Meet The Team</a
+        >
+        <a
+          href="#join"
+          class="sidebar-link"
+          style="transition-delay: 0.6s; font-weight: 700; color: #d2b48c"
+          >Apply Now</a
+        >
+      </nav>
+
+      <div class="sidebar-footer">
+        PRINCETON LEARNING EXPERIENCE<br />
+        HONG KONG BRANCH &copy; 2025
+
+        <div class="sidebar-socials">
+          <a href="mailto:example@ple.com"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
+          <a href="#"><i class="fa-solid fa-globe"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </aside>
+
+    <section id="home" class="ple-container">
+      <div class="ple-image-side"></div>
+      <div class="ple-content-side">
+        <div class="ple-header">
+          <span class="ple-name">Princeton Learning<br />Experience</span>
+          <div class="ple-underline"></div>
+          <span class="ple-location">Hong Kong</span>
+        </div>
+        <div class="ple-stats-row">
+          <div class="ple-stat-box">
+            <span class="ple-stat-num">Free</span>
+            <span class="ple-stat-lab">Online English <br />Tutoring</span>
+          </div>
+          <div class="ple-stat-box">
+            <span class="ple-stat-num" data-target="40">0</span>
+            <span class="ple-stat-lab">Teachers</span>
+          </div>
+          <div class="ple-stat-box">
+            <span class="ple-stat-num" data-target="300">0</span>
+            <span class="ple-stat-lab">Volunteer Hours</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <div class="about-text">
+          <h2 class="about-title">About Us</h2>
+          <div class="about-divider"></div>
+          <p class="about-description">
+            Princeton Learning Experience Hong Kong is a student-led nonprofit
+            organization dedicated to providing free, high-quality online
+            English tutoring to students across Hong Kong and Shenzhen. Founded
+            by passionate students, we believe that language should never be a
+            barrier to opportunity.
+          </p>
+          <p class="about-description">
+            Our mission is simple: connect talented tutors with eager learners
+            in a supportive, engaging environment. Through personalized
+            one-on-one sessions, we help students build confidence, improve
+            their English proficiency, and unlock new academic possibilities.
+          </p>
+          <p class="about-description">
+            <strong>Tutoring Schedule:</strong> Sessions are held every Friday,
+            Saturday, and Sunday from 8:00-8:40 PM HKT, providing flexible
+            weekend learning opportunities that fit around your schedule.
+          </p>
+        </div>
+        <div class="about-image-wrap">
+          <img
+            src="./placeholder.jpg"
+            alt="PLE Tutoring Session"
+            class="about-image"
+            onerror="this.src='./placeholder.jpg'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits" class="benefits-section">
+      <div class="benefits-header">
+        <h2 class="benefits-title">Why Join PLE?</h2>
+        <p class="benefits-subtitle">
+          Making a difference while growing together
+        </p>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <h3 class="benefit-heading">For Students</h3>
+          <ul class="benefit-list">
+            <li>Free personalized English tutoring</li>
+            <li>Flexible scheduling around your life</li>
+            <li>One-on-one attention and support</li>
+            <li>Build confidence in speaking and writing</li>
+            <li>Improve grades and test scores</li>
+            <li>Access to passionate, dedicated tutors</li>
+          </ul>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fa-solid fa-chalkboard-user"></i>
+          </div>
+          <h3 class="benefit-heading">For Teachers</h3>
+          <ul class="benefit-list">
+            <li>Earn verified volunteering hours</li>
+            <li>Develop leadership and teaching skills</li>
+            <li>Make a real impact in your community</li>
+            <li>Flexible tutoring schedule</li>
+            <li>Join a passionate community of educators</li>
+            <li>Build your resume with meaningful experience</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="team-section">
+      <div class="team-header">
+        <h2 class="team-title">Meet The Team</h2>
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="./placeholder.jpg"
+              alt="Member"
+              class="team-photo"
+              onerror="this.src='./placeholder.jpg'"
+            />
+            <h3 class="team-name">Member</h3>
+            <p class="team-role">Role</p>
+            <p class="team-bio">Bio</p>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./placeholder.jpg"
+              alt="Member"
+              class="team-photo"
+              onerror="this.src='./placeholder.jpg'"
+            />
+            <h3 class="team-name">Member</h3>
+            <p class="team-role">Role</p>
+            <p class="team-bio">Bio</p>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./placeholder.jpg"
+              alt="Member"
+              class="team-photo"
+              onerror="this.src='./placeholder.jpg'"
+            />
+            <h3 class="team-name">Member</h3>
+            <p class="team-role">Role</p>
+            <p class="team-bio">Bio</p>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./placeholder.jpg"
+              alt="Member"
+              class="team-photo"
+              onerror="this.src='./placeholder.jpg'"
+            />
+            <h3 class="team-name">Member</h3>
+            <p class="team-role">Role</p>
+            <p class="team-bio">Bio</p>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./placeholder.jpg"
+              alt="Member"
+              class="team-photo"
+              onerror="this.src='./placeholder.jpg'"
+            />
+            <h3 class="team-name">Member</h3>
+            <p class="team-role">Role</p>
+            <p class="team-bio">Bio</p>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./placeholder.jpg"
+              alt="Member"
+              class="team-photo"
+              onerror="this.src='./placeholder.jpg'"
+            />
+            <h3 class="team-name">Member</h3>
+            <p class="team-role">Role</p>
+            <p class="team-bio">Bio</p>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./placeholder.jpg"
+              alt="Member"
+              class="team-photo"
+              onerror="this.src='./placeholder.jpg'"
+            />
+            <h3 class="team-name">Member</h3>
+            <p class="team-role">Role</p>
+            <p class="team-bio">Bio</p>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./placeholder.jpg"
+              alt="Member"
+              class="team-photo"
+              onerror="this.src='./placeholder.jpg'"
+            />
+            <h3 class="team-name">Member</h3>
+            <p class="team-role">Role</p>
+            <p class="team-bio">Bio</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" class="apply-section">
+      <div class="apply-container">
+        <h2 class="apply-title">Apply Now</h2>
+        <div class="apply-divider"></div>
+        <p class="apply-description">
+          Ready to make a difference? Join our community of dedicated tutors and
+          eager learners. Scan the QR code below to begin your application.
+        </p>
+        <a
+          href="#"
+          class="qr-placeholder"
+          style="text-decoration: none; color: #999"
+          >QR CODE</a
+        >
+        <a
+          href="#"
+          style="
+            display: inline-block;
+            margin-top: 20px;
+            color: #d2b48c;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+          "
+          >or click here to apply</a
+        >
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo-text">PLE HK</div>
+          <p class="footer-tagline">
+            Empowering students through accessible, high-quality English
+            education. Breaking down language barriers, one session at a time.
+          </p>
+          <div class="footer-socials">
+            <a href="mailto:example@ple.com"
+              ><i class="fa-regular fa-envelope"></i
+            ></a>
+            <a href="#"><i class="fa-solid fa-globe"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#team">Meet The Team</a></li>
+            <li><a href="#join">Apply Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-section footer-qr">
+          <h4 class="footer-heading">Scan to Apply</h4>
+          <div class="footer-qr-box">QR CODE</div>
+          <a href="#" class="footer-qr-link">or click here to apply</a>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:example@ple.com">example@ple.com</a></li>
+            <li><a href="#">Hong Kong</a></li>
+            <li><a href="#">Shenzhen</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 Princeton Learning Experience Hong Kong. All Rights
+        Reserved.
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Princeton Learning Experience HK</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+  </style>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav class="top-nav">
+    <div class="nav-left">
+      <button class="menu-btn" id="openMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="social-icons">
+        <a href="mailto:pleis@pleonline.org"><i class="fa-regular fa-envelope"></i></a>
+        <a href="https://docs.google.com/presentation/d/1Ny61rtnaP0PGMLzoiV3bfRyFafank5SxbvqJ4WPLSMA/edit?pli=1&slide=id.g30058f63ec6_0_67#slide=id.g30058f63ec6_0_67"
+          target="_blank"><i class="fa-solid fa-globe"></i></a>
+        <a href="https://www.instagram.com/ple_hk_branch?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="nav-center">
+      <div class="nav-logo-wrap">
+        <img src="./logo.png" alt="PLE Logo" class="nav-logo-img" onerror="this.style.display='none'" />
+        <div class="nav-logo-text">PLE HK</div>
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <div class="lang-switch">
+        <a href="index.html" class="lang-btn" style="text-decoration: none">EN</a>
+        <span style="color: #ddd">|</span>
+        <a href="index-zh.html" class="lang-btn" style="text-decoration: none">繁</a>
+        <span style="color: #ddd">|</span>
+        <a href="index-cn.html" class="lang-btn active" style="text-decoration: none">中</a>
+      </div>
+
+      <a href="#join" class="cta-btn">加入我们</a>
+    </div>
+  </nav>
+
+  <div class="sidebar-overlay" id="overlay"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <button class="close-btn" id="closeMenu">✕</button>
+    <div class="sidebar-header">
+      <div class="sidebar-logo-text">PLE HK</div>
+    </div>
+
+    <nav>
+      <a href="#home" class="sidebar-link" style="transition-delay: 0.1s">首页</a>
+      <a href="#about" class="sidebar-link" style="transition-delay: 0.2s">关于我们</a>
+      <a href="#benefits" class="sidebar-link" style="transition-delay: 0.4s">项目优势</a>
+      <a href="#team" class="sidebar-link" style="transition-delay: 0.5s">我们的团队</a>
+      <a href="#join" class="sidebar-link" style="transition-delay: 0.6s; font-weight: 700; color: #d2b48c">立即申请</a>
+    </nav>
+
+    <div class="sidebar-footer">
+      PRINCETON LEARNING EXPERIENCE<br />
+      HONG KONG BRANCH &copy; 2025
+
+      <div class="sidebar-socials">
+        <a href="mailto:pleis@pleonline.org"><i class="fa-regular fa-envelope"></i></a>
+        <a href="https://docs.google.com/presentation/d/1Ny61rtnaP0PGMLzoiV3bfRyFafank5SxbvqJ4WPLSMA/edit?pli=1&slide=id.g30058f63ec6_0_67#slide=id.g30058f63ec6_0_67"
+          target="_blank"><i class="fa-solid fa-globe"></i></a>
+        <a href="https://www.instagram.com/ple_hk_branch?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </aside>
+
+  <section id="home" class="ple-container">
+    <div class="ple-image-side"></div>
+    <div class="ple-content-side">
+      <div class="ple-header">
+        <span class="ple-name">Princeton Learning<br />Experience</span>
+        <div class="ple-underline"></div>
+        <span class="ple-location">香港分会</span>
+      </div>
+      <div class="ple-stats-row">
+        <div class="ple-stat-box">
+          <span class="ple-stat-num">免费</span>
+          <span class="ple-stat-lab">在线英语辅导</span>
+        </div>
+        <div class="ple-stat-box">
+          <span class="ple-stat-num" data-target="40">0</span>
+          <span class="ple-stat-lab">导师</span>
+        </div>
+        <div class="ple-stat-box">
+          <span class="ple-stat-num" data-target="300">0</span>
+          <span class="ple-stat-lab">志愿服务时长</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <h2 class="about-title">关于我们</h2>
+        <div class="about-divider"></div>
+        <p class="about-description">
+          普林斯顿学习体验（香港分会）是一个由学生主导的非盈利组织，致力于为香港和深圳的学生提供免费、高质量的在线英语辅导。由一群充满热情的学生创立，我们坚信语言不应成为获取机会的障碍。
+        </p>
+        <p class="about-description">
+          我们的使命很简单：在一个互助和互动的环境中，将优秀的导师与渴望学习的学生连接起来。通过一对一的个性化辅导，我们帮助学生建立自信，提升英语水平，并开启新的学术可能。
+        </p>
+        <p class="about-description">
+          <strong>辅导时间表：</strong>
+          课程于每个星期五、六和日的晚上8:00至8:40（香港时间）进行，提供灵活的周末学习机会，配合您的日程安排。
+        </p>
+      </div>
+      <div class="about-image-wrap">
+        <img src="./placeholder.jpg" alt="PLE Tutoring Session" class="about-image"
+          onerror="this.src='./placeholder.jpg'" />
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits" class="benefits-section">
+    <div class="benefits-header">
+      <h2 class="benefits-title">为何加入 PLE？</h2>
+      <p class="benefits-subtitle">携手成长，共创改变</p>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <h3 class="benefit-heading">给学生的益处</h3>
+        <ul class="benefit-list">
+          <li>免费的一对一英语辅导</li>
+          <li>灵活的日程安排</li>
+          <li>专属的关注与支持</li>
+          <li>建立听说读写的自信</li>
+          <li>提高成绩与考试分数</li>
+          <li>接触热心专注的导师</li>
+        </ul>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fa-solid fa-chalkboard-user"></i>
+        </div>
+        <h3 class="benefit-heading">给导师的益处</h3>
+        <ul class="benefit-list">
+          <li>获得认可的志愿服务时长</li>
+          <li>培养领导能力与教学技巧</li>
+          <li>对社区产生真正的影响</li>
+          <li>灵活的教学时间</li>
+          <li>加入充满热情的教育者社群</li>
+          <li>以具意义的经历丰富个人简历</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="team-section">
+    <div class="team-header">
+      <h2 class="team-title">我们的团队</h2>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./placeholder.jpg" alt="Member" class="team-photo" onerror="this.src='./placeholder.jpg'" />
+          <h3 class="team-name">成员</h3>
+          <p class="team-role">职位</p>
+          <p class="team-bio">简介</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./placeholder.jpg" alt="Member" class="team-photo" onerror="this.src='./placeholder.jpg'" />
+          <h3 class="team-name">成员</h3>
+          <p class="team-role">职位</p>
+          <p class="team-bio">简介</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./placeholder.jpg" alt="Member" class="team-photo" onerror="this.src='./placeholder.jpg'" />
+          <h3 class="team-name">成员</h3>
+          <p class="team-role">职位</p>
+          <p class="team-bio">简介</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./placeholder.jpg" alt="Member" class="team-photo" onerror="this.src='./placeholder.jpg'" />
+          <h3 class="team-name">成员</h3>
+          <p class="team-role">职位</p>
+          <p class="team-bio">简介</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./placeholder.jpg" alt="Member" class="team-photo" onerror="this.src='./placeholder.jpg'" />
+          <h3 class="team-name">成员</h3>
+          <p class="team-role">职位</p>
+          <p class="team-bio">简介</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./placeholder.jpg" alt="Member" class="team-photo" onerror="this.src='./placeholder.jpg'" />
+          <h3 class="team-name">成员</h3>
+          <p class="team-role">职位</p>
+          <p class="team-bio">简介</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./placeholder.jpg" alt="Member" class="team-photo" onerror="this.src='./placeholder.jpg'" />
+          <h3 class="team-name">成员</h3>
+          <p class="team-role">职位</p>
+          <p class="team-bio">简介</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./placeholder.jpg" alt="Member" class="team-photo" onerror="this.src='./placeholder.jpg'" />
+          <h3 class="team-name">成员</h3>
+          <p class="team-role">职位</p>
+          <p class="team-bio">简介</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./placeholder.jpg" alt="Member" class="team-photo" onerror="this.src='./placeholder.jpg'" />
+          <h3 class="team-name">成员</h3>
+          <p class="team-role">职位</p>
+          <p class="team-bio">简介</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="join" class="apply-section">
+    <div class="apply-container">
+      <h2 class="apply-title">立即申请</h2>
+      <div class="apply-divider"></div>
+      <p class="apply-description">
+        准备好做出改变了吗？加入我们这个由热心导师和好学学生组成的社群。扫描下方二维码开始申请。
+      </p>
+      <img src="QRCode.png" alt="QR Code" style="display: block; margin: 0 auto; max-width: 200px" />
+      <a href="#" style="
+            display: inline-block;
+            margin-top: 20px;
+            color: #d2b48c;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+          ">或点击此处申请</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo-text">PLE HK</div>
+        <p class="footer-tagline">
+          通过普及且高质量的英语教育赋能学生。循序渐进，打破语言障碍。
+        </p>
+        <div class="footer-socials">
+          <a href="mailto:pleis@pleonline.org"><i class="fa-regular fa-envelope"></i></a>
+          <a href="https://docs.google.com/presentation/d/1Ny61rtnaP0PGMLzoiV3bfRyFafank5SxbvqJ4WPLSMA/edit?pli=1&slide=id.g30058f63ec6_0_67#slide=id.g30058f63ec6_0_67"
+            target="_blank"><i class="fa-solid fa-globe"></i></a>
+          <a href="https://www.instagram.com/ple_hk_branch?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4 class="footer-heading">快速链接</h4>
+        <ul class="footer-links">
+          <li><a href="#home">首页</a></li>
+          <li><a href="#about">关于我们</a></li>
+          <li><a href="#benefits">项目优势</a></li>
+          <li><a href="#team">我们的团队</a></li>
+          <li><a href="#join">立即申请</a></li>
+        </ul>
+      </div>
+      <div class="footer-section footer-qr">
+        <h4 class="footer-heading">扫码申请</h4>
+        <img src="QRCode.png" alt="QR Code" style="width: 120px; display: block; margin-bottom: 10px" />
+        <a href="#" class="footer-qr-link">或点击此处申请</a>
+      </div>
+      <div class="footer-section">
+        <h4 class="footer-heading">联系我们</h4>
+        <ul class="footer-links">
+          <li>
+            <a href="mailto:pleis@pleonline.org">pleis@pleonline.org</a>
+          </li>
+          <li><a href="#">香港</a></li>
+          <li><a href="#">深圳</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Princeton Learning Experience Hong Kong. 版权所有。
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
